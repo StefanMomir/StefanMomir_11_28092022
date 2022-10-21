@@ -60,7 +60,7 @@
 }
 
 /* Error Page => 375 */
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 425px) {
   /* Slider */
   .slider {
     all: unset;
