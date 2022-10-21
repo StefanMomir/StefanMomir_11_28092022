@@ -46,6 +46,15 @@ const Block = () => {
             <div className="location-name">
               <p>{resItem.location}</p>
             </div>
+            <div className="location-tags">
+              {resItem.tags.map((tag, index) => {
+                return (
+                  <li key={index} className="tag">
+                    {tag}
+                  </li>
+                );
+              })}
+            </div>
           </div>
           <div className="details">
             <div className="author-container">
@@ -57,7 +66,6 @@ const Block = () => {
               </div>
             </div>
             <div className="lodging-rating">
-              {/*<img src={"../" + ratingStars} alt="rating" />*/}
               <Rating />
             </div>
           </div>

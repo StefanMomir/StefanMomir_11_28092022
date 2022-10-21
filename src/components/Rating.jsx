@@ -18,19 +18,19 @@ const Rating = () => {
 
   /* Check Rated Stars Number */
   let ratedStars = [...Array(parseInt(ratingStars)).keys()].map((index) => {
-    return <img key={index} src={rateStar} alt="none" />;
+    return <img className="stars" key={index} src={rateStar} alt="none" />;
   });
 
   /* Check Difference Between Rated and NonRated Number of Stars */
   let nonRatedStars = [
     ...Array(parseInt(maxStars) - ratedStars.length).keys(),
   ].map((index) => {
-    return <img key={index} src={noStar} alt="none" />;
+    return <img className="stars" key={index} src={noStar} alt="none" />;
   });
 
   /* Return Total Numbers - Rated NonRated Stars */
   return (
-    <div>
+    <div className="rating-stars">
       {ratedStars}
       {nonRatedStars}
     </div>
