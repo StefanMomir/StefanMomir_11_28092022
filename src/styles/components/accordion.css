@@ -1,0 +1,46 @@
+.dropdown-button.down::after,
+.dropdown-button.up::after {
+  position: absolute;
+  /*content: "\f078";*/
+  content: "";
+  background: url("../../assets/arrow_down.svg") no-repeat;
+  width: 40px;
+  height: 39px;
+  display: inline-block;
+  right: 10px;
+  top: 3px;
+}
+
+.dropdown-button.up::after {
+  /*content: "\f077";*/
+  background: url("../../assets/arrow_up.svg") no-repeat;
+}
+
+.description .dropdown-button.down::after,
+.description .dropdown-button.up::after,
+.equipment .dropdown-button.down::after,
+.equipment .dropdown-button.up::after {
+  position: relative;
+  left: 510px;
+  top: -30px;
+}
+
+/*/ Media Query /*/
+@media only screen and (max-width: 425px) {
+  .dropdown-button.up::after,
+  .dropdown-button.down::after {
+    width: 20px;
+    height: 19px;
+    right: 5px;
+    top: 6px;
+  }
+
+  .description .dropdown-button.down::after,
+  .description .dropdown-button.up::after,
+  .equipment .dropdown-button.down::after,
+  .equipment .dropdown-button.up::after {
+    position: relative;
+    left: 300px;
+    top: -17px;
+  }
+}

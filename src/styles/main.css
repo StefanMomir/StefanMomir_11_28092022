@@ -1,0 +1,8 @@
+/* Full Body Main Content */
+main {
+  max-width: 1440px;
+  position: relative;
+  max-width: 1240px;
+  /*max-width: 80ch;*/
+  margin: auto;
+}

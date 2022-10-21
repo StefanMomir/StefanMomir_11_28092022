@@ -1,0 +1,108 @@
+.error404-container div,
+.error404-container p,
+.error404-container h1 {
+  all: unset;
+  box-sizing: border-box;
+}
+
+.error404-container {
+  position: relative;
+  max-width: 1440px;
+  width: 872px;
+  height: fit-content;
+  display: flex;
+  flex-flow: column wrap;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  color: #ff6060;
+  box-sizing: border-box;
+  margin-top: 169px;
+  margin-bottom: 159px;
+}
+
+.error404-header h1 {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-weight: 700;
+  font-size: 288px;
+  line-height: 260px;
+  margin-bottom: 124px;
+}
+
+.error404-message p {
+  display: flex;
+  width: 872px;
+  height: 51px;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 36px;
+  line-height: 51px;
+  margin: auto;
+  margin-bottom: 124px;
+}
+
+.error404-return p {
+  display: flex;
+  width: 284px;
+  height: 26px;
+  text-decoration-line: underline;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 26px;
+  margin: auto;
+  cursor: pointer;
+}
+
+.error404-container br {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 425px) {
+  .error404-container {
+    max-width: 375px;
+    width: 100%;
+    height: fit-content;
+    margin-top: 195px;
+    margin-bottom: 235px;
+  }
+
+  .error404-header h1 {
+    width: 198px;
+    height: 99px;
+    font-weight: 700;
+    font-size: 96px;
+    line-height: 137px;
+    margin: auto;
+    margin-bottom: 11px;
+  }
+
+  .error404-message p {
+    width: 260px;
+    height: 52px;
+    font-size: 18px;
+    line-height: 26px;
+    margin: auto;
+    margin-bottom: 133px;
+  }
+
+  .error404-return p {
+    display: flex;
+    width: 284px;
+    height: 26px;
+    font-size: 18px;
+    line-height: 26px;
+    margin: auto;
+    cursor: pointer;
+  }
+
+  .error404-container br {
+    display: block;
+  }
+}

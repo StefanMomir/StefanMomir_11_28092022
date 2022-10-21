@@ -1,0 +1,129 @@
+.about {
+  margin: auto;
+  max-width: 1024px;
+  width: 100%;
+  padding-bottom: 201px;
+}
+
+/* Full Body About Text */
+.about-element {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  max-width: 1024px;
+  width: 100%;
+  height: fit-content;
+  /*background-color: var(--lightgray);*/
+}
+
+.about-text {
+  border: 1px solid red;
+  min-height: fit-content;
+}
+
+.about .dropdown-button {
+  position: relative;
+  height: 47px;
+  width: 1023px;
+  border-radius: 5px;
+  background-color: #ff6060;
+}
+
+.about .dropdown-button p {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--white);
+  padding-left: 18px;
+  margin-top: 31px;
+}
+
+/* Text Customization */
+.about-text p {
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+  padding: 15px;
+}
+
+.about .dropdown-button img {
+  margin-top: 10px;
+  color: var(--white);
+  position: absolute;
+  right: 35px;
+  top: 0;
+}
+
+.selected {
+  color: #ff6060;
+  font-size: 120px;
+}
+
+.about .dropdown-text {
+  width: 1024px;
+  margin: auto;
+  display: block;
+  height: fit-content;
+}
+
+.about .dropdown-text p {
+  margin: auto;
+  font-family: Montserrat;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #ff6060;
+  height: fit-content;
+  width: 1024px;
+  padding: 27px 27px 19px 18px;
+  padding-top: 27px;
+  background-color: #f6f6f6;
+}
+
+.about .dropdown-text.show {
+  max-height: 100%;
+  height: auto;
+  transition: all 0.5s cubic-bezier(1, 0, 1, 0);
+}
+
+@media only screen and (max-width: 425px) {
+  .about {
+    max-width: 336px;
+    padding-bottom: 160px;
+  }
+
+  .about .dropdown-button {
+    position: relative;
+    width: 336px;
+    height: 30px;
+    border-radius: 5px;
+  }
+
+  .about .dropdown-button p {
+    font-size: 13px;
+    line-height: 28px;
+    padding-left: 12px;
+    margin-top: 19px;
+  }
+
+  .about .dropdown-text {
+    width: 336px;
+  }
+
+  .about .dropdown-text p {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    width: 336px;
+    padding: 18px 7px 19px 12px;
+  }
+}

@@ -1,0 +1,108 @@
+/* Full Body Top Image */
+.top-bg {
+  display: flex;
+  flex-flow: row;
+  max-width: 100%;
+}
+
+/* Top Image */
+.top-bg-home,
+.top-bg-about {
+  object-fit: cover;
+  border-radius: 25px;
+  height: 223px;
+  width: 1240px;
+}
+
+.top-bg-home p {
+  position: relative;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 68px;
+  display: flex;
+  align-items: flex-end;
+  color: white;
+  top: 78px;
+  margin: auto;
+  justify-content: center;
+}
+
+.top-bg-about p {
+  display: none;
+}
+
+.top-bg-home {
+  background-image: url("../assets/top-bg.jpg");
+  background-position: 40% 20%;
+  background-size: cover;
+  background-blend-mode: darken;
+  background-color: rgba(00000, 00000, 00000, 30%);
+}
+
+.top-bg-about {
+  background-image: url("../assets/top-bg-about.jpg");
+  background-position: 20% 40%;
+  background-size: 100% cover;
+  background-blend-mode: darken;
+  background-color: rgba(00000, 00000, 00000, 30%);
+}
+
+.top-bg .top-bg-about {
+  margin: 30px 0 0 0;
+}
+
+.top-bg .top-bg-home {
+  margin: 105px 0 66px 0;
+}
+
+@media only screen and (max-width: 500px) {
+  .top-bg {
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .top-bg-about {
+    background-size: cover;
+  }
+
+  .top-bg-home,
+  .top-bg-about {
+    display: flex;
+    border-radius: 10px;
+    height: 111px;
+    width: 336px;
+  }
+  .top-bg-about {
+    height: 223px;
+    width: 336px;
+  }
+
+  .top-bg .top-bg-about {
+    margin: 10px 0 0 0;
+  }
+
+  .top-bg .top-bg-home {
+    margin: 16px 0 22px 0;
+  }
+
+  .top-bg-home p {
+    width: 100%;
+    top: 0px;
+    margin: auto;
+    justify-content: left;
+    padding-left: 16px;
+    padding-right: 100px;
+    font-size: 24px;
+    line-height: 24px;
+    margin: auto;
+    justify-content: left;
+    padding-left: 16px;
+  }
+
+  .top-bg-about p {
+    display: none;
+  }
+}
