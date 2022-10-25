@@ -1,6 +1,6 @@
 import React from "react";
 
-const top = ({ topImage }) => {
+const Top = ({ topImage }) => {
   return (
     <div className="top-bg">
       <div className={topImage}>
@@ -10,4 +10,4 @@ const top = ({ topImage }) => {
   );
 };
 
-export default top;
+export default Top;

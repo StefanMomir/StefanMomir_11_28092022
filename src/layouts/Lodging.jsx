@@ -31,9 +31,7 @@ const Block = () => {
       return <li key={index}>{equipment}</li>;
     });
 
-    const ratingStars = rating
-      .filter((rate) => rate.rid === resItem.rating)
-      .map((res) => res.icon);
+    rating.filter((rate) => rate.rid === resItem.rating).map((res) => res.icon);
 
     return (
       <div className="lodging">

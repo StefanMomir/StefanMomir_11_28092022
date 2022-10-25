@@ -10,19 +10,19 @@ const Rating = () => {
   const maxStars = 5;
 
   /* Filter/Map Result */
-  let ratingStars = jsonData
+  const ratingStars = jsonData
     .filter((lodgingFilter) => lodgingFilter.id === id)
     .map((item) => {
       return item.rating;
     });
 
   /* Check Rated Stars Number */
-  let ratedStars = [...Array(parseInt(ratingStars)).keys()].map((index) => {
+  const ratedStars = [...Array(parseInt(ratingStars)).keys()].map((index) => {
     return <img className="stars" key={index} src={rateStar} alt="none" />;
   });
 
   /* Check Difference Between Rated and NonRated Number of Stars */
-  let nonRatedStars = [
+  const nonRatedStars = [
     ...Array(parseInt(maxStars) - ratedStars.length).keys(),
   ].map((index) => {
     return <img className="stars" key={index} src={noStar} alt="none" />;

@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 /* Get Accordion Data from DB */
-const Accordion = ({ aid, title, description }) => {
+const Accordion = ({ title, description }) => {
   const [activeState, setActivated] = useState(false);
   const toggleDropDown = () => {
     setActivated(!activeState);
@@ -11,7 +11,6 @@ const Accordion = ({ aid, title, description }) => {
   return (
     <>
       <div
-        key={aid}
         onClick={toggleDropDown}
         className={`dropdown-button ${activeState ? `up` : `down`}`}
       >
