@@ -44,8 +44,17 @@ const ImageSlider = () => {
       <div className="slider-count">
         {currentState + 1}/{slidesLength}
       </div>
-      <ArrowButton direction={next} change={"right"} />
-      <ArrowButton direction={previous} change={"left"} />
+      {/* MODIFICATION POUR SOUTENANCE - NO ARROW IF THERE IS ONLY ONE SLIDE */}
+      {slidesLength > 1 ? (
+        <ArrowButton direction={next} change={"right"} />
+      ) : (
+        ""
+      )}
+      {slidesLength > 1 ? (
+        <ArrowButton direction={previous} change={"left"} />
+      ) : (
+        ""
+      )}
       <div className="slider">
         {lodgingFilter.map((dataSlide) => {
           return (
